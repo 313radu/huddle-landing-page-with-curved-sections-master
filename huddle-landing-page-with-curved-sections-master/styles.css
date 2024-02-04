@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+header {
+  max-width: 1440px;
+  min-width: 375px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+}
+header .logo {
+  width: 200px;
+  height: 150px;
+  margin-left: 4em;
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+}
+header button {
+  width: 130px;
+  height: 35px;
+  border: 2px solid hsl(321, 100%, 78%);
+  border-radius: 2em;
+  outline: none;
+  color: hsl(321, 100%, 78%);
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 400;
+  margin-right: 3em;
+  transition: 500ms ease-in-out;
+}
+header button:hover, header button:focus {
+  border: 2px solid hsl(0, 1%, 46%);
+  color: hsl(0, 1%, 46%);
+  transition: 500ms ease-in-out;
+}
+
+main {
+  max-width: 1440px;
+  min-height: 375px;
+  width: 100%;
+  display: block;
+}
+main .section-1 {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .section-1 h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-block: 2.5em 0.5em;
+}
+main .section-1 p {
+  width: 500px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  color: hsl(0, 1%, 46%);
+}
+main .section-1 button {
+  width: 350px;
+  height: 65px;
+  border-radius: 4em;
+  background-color: hsl(322, 100%, 66%);
+  font-size: 1rem;
+  color: hsl(207, 100%, 98%);
+  font-weight: 400;
+  cursor: pointer;
+  box-shadow: 0px 5px 20px 1px hsla(0, 0%, 20%, 0.404);
+  margin-block: 3em 4em;
+  transition: 500ms ease-in-out;
+}
+main .section-1 button:hover, main .section-1 button:focus {
+  background-color: hsl(321, 100%, 78%);
+  transition: 500ms ease-in-out;
+}
+main .section-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-block-end: 6em;
+}
+main .section-2 img {
+  width: 60%;
+  height: 80%;
+}
+main .section-3 {
+  margin-block-start: 1em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main .section-3 article {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+main .section-3 article span:nth-child(2) {
+  font-size: 4.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: hsl(192, 100%, 9%);
+}
+main .section-3 article span:nth-child(3) {
+  text-align: center;
+  font-size: 1.2rem;
+  color: hsl(0, 1%, 46%);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+main .section-4 {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "top top top top" "left right right right" "bottom bottom bottom bottom";
+}
+main .section-4 .top-img {
+  width: 100%;
+  grid-area: top;
+  display: flex;
+  align-items: flex-end;
+}
+main .section-4 .top-img .desktop-curve {
+  width: 100%;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .section-4 .top-img .mobile-curve {
+  display: none;
+}
+main .section-4 .left-side {
+  grid-area: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(247, 251, 255);
+}
+main .section-4 .left-side h2 {
+  margin-block-end: 0.5em;
+  margin-left: 2em;
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+}
+main .section-4 .left-side p {
+  margin-left: 6em;
+  width: 70%;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+}
+main .section-4 .right-side {
+  width: 50%;
+  grid-area: right;
+  background-color: rgb(247, 251, 255);
+}
+main .section-4 .right-side img {
+  width: 150%;
+  height: 80%;
+  display: block;
+}
+main .section-4 .bottom-img {
+  width: 100%;
+  grid-area: bottom;
+}
+main .section-4 .bottom-img .desktop-curve {
+  width: 100%;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .section-4 .bottom-img .mobile-curve {
+  display: none;
+}
+main .section-5 {
+  margin-block-start: 5em;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main .section-5 .left-side, main .section-5 .right-side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .section-5 .left-side {
+  justify-content: center;
+  align-items: center;
+}
+main .section-5 .left-side img {
+  width: 70%;
+  height: 70%;
+  display: block;
+}
+main .section-5 .right-side {
+  justify-content: center;
+  gap: 2em;
+}
+main .section-5 .right-side h2 {
+  margin-left: 2em;
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+}
+main .section-5 .right-side p {
+  margin-left: 5em;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  width: 76%;
+}
+main .section-6 {
+  margin-block: 5em 5em;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "top top top top" "left left right right" "bottom bottom bottom bottom";
+}
+main .section-6 .top-img {
+  grid-area: top;
+  display: flex;
+  align-items: flex-end;
+}
+main .section-6 .top-img .mobile-curve {
+  display: none;
+}
+main .section-6 .left-side {
+  grid-area: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(247, 251, 255);
+}
+main .section-6 .left-side h2 {
+  width: 70%;
+  margin-left: 2em;
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+}
+main .section-6 .left-side p {
+  width: 60%;
+  margin-left: 5em;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+main .section-6 .right-side {
+  grid-area: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(247, 251, 255);
+}
+main .section-6 .right-side img {
+  width: 80%;
+  height: 80%;
+  display: flex;
+}
+main .section-6 .bottom-img {
+  grid-area: bottom;
+}
+main .section-6 .bottom-img .mobile-curve {
+  display: none;
+}
+main .section-7 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 4em;
+}
+main .section-7 h2 {
+  font-size: 2.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+main .section-7 button {
+  width: 350px;
+  height: 65px;
+  border-radius: 4em;
+  background-color: hsl(322, 100%, 66%);
+  font-size: 1rem;
+  color: hsl(207, 100%, 98%);
+  font-weight: 400;
+  cursor: pointer;
+  box-shadow: 0px 5px 20px 1px hsla(0, 0%, 20%, 0.404);
+  margin-block: 2em 4em;
+  transition: 500ms ease-in-out;
+}
+main .section-7 button:hover, main .section-7 button:focus {
+  background-color: hsl(321, 100%, 78%);
+  transition: 500ms ease-in-out;
+}
+
+footer {
+  max-width: 1440px;
+  min-width: 375px;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "top top top top" "left left left right";
+}
+footer .top-img {
+  width: 100%;
+  grid-area: top;
+  display: flex;
+  align-items: flex-end;
+}
+footer .top-img .mobile-curve {
+  display: none;
+}
+footer .left-footer-side {
+  grid-area: left;
+  height: 55vh;
+  background-color: hsl(192, 100%, 9%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+footer .left-footer-side svg {
+  margin-left: 4em;
+  margin-block-end: 1em;
+}
+footer .left-footer-side svg path {
+  fill: hsl(207, 100%, 98%);
+}
+footer .left-footer-side p {
+  font-size: 0.85rem;
+  margin-left: 4.2em;
+  color: hsl(207, 100%, 98%);
+  line-height: 22px;
+}
+footer .left-footer-side p i {
+  padding-right: 1em;
+}
+footer .left-footer-side .social-icons {
+  margin-block-start: 3em;
+  margin-left: 2.2em;
+}
+footer .left-footer-side .social-icons i {
+  color: hsl(207, 100%, 98%);
+  font-size: 1.8rem;
+  padding-left: 1em;
+}
+footer .right-footer-side {
+  grid-area: right;
+  background-color: hsl(192, 100%, 9%);
+}
+footer .right-footer-side h4 {
+  color: hsl(207, 100%, 98%);
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  margin-block: 3em 1em;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+footer .right-footer-side p {
+  margin-block-end: 2em;
+  color: hsl(207, 100%, 98%);
+  font-size: 0.85rem;
+  line-height: 20px;
+}
+footer .right-footer-side form {
+  width: 100%;
+  display: block;
+}
+footer .right-footer-side form input[type=email] {
+  width: 300px;
+  height: 40px;
+  border-radius: 0.5em;
+  text-indent: 1em;
+  text-indent: 1em;
+}
+footer .right-footer-side form input[type=email]::-moz-placeholder {
+  text-indent: 1em;
+}
+footer .right-footer-side form input[type=email]::placeholder {
+  text-indent: 1em;
+}
+footer .right-footer-side form input[type=submit] {
+  width: 130px;
+  height: 40px;
+  border-radius: 0.5em;
+  margin-left: 2.5em;
+  cursor: pointer;
+  color: hsl(207, 100%, 98%);
+  background-color: hsl(322, 100%, 66%);
+  font-weight: 400;
+  transition: 500ms ease-in-out;
+}
+footer .right-footer-side form input[type=submit]:hover, footer .right-footer-side form input[type=submit]:focus {
+  background-color: hsl(321, 100%, 78%);
+  transition: 500ms ease-in-out;
+}/*# sourceMappingURL=styles.css.map */
